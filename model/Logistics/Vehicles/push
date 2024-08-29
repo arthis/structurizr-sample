@@ -1,0 +1,15 @@
+#!/bin/bash
+
+url="http://monstructurizr.com/api"
+id="9"
+key="xxxxxxxxxx"
+secret="xxxxxxxxxxx"
+district="Logistics"
+application="Vehicles"
+workspace="/workspace/model/$district/$application/workspace.dsl"
+
+structurizr-push $url $id $key $secret $workspace
+
+
+
+

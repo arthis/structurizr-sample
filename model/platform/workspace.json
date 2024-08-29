@@ -1,0 +1,140 @@
+{
+  "id" : 0,
+  "name" : "Platform",
+  "description" : "Description",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbmFtZSAiIFBsYXRmb3JtIC0gYmlnIGVudGVycHJpc2UiCgogICAgbW9kZWwgewogICAgICAgIGN1c3RvbWVyID0gcGVyc29uICJDdXN0b21lciIKCiAgICAgICAgZ3JvdXAgSWRlbnRpdHkmQWNjZXNzTWFuYWdlbWVudCB7CiAgICAgICAgICAgIGlkZW50aXR5ID0gc29mdHdhcmVTeXN0ZW0gIklkZW50aXR5IgogICAgICAgICAgICBsaWNlbnNlID0gc29mdHdhcmVTeXN0ZW0gIkxpY2Vuc2UiCiAgICAgICAgICAgIGFjY2Vzc01hbmFnZW1lbnQgPSBzb2Z0d2FyZVN5c3RlbSAiQWNjZXNzIE1hbmFnZW1lbnQiCiAgICAgICAgfQoKICAgICAgICBncm91cCAgTG9naXN0aWNzIHsKICAgICAgICAgICAgdmVoaWNsZXMgPSBzb2Z0d2FyZVN5c3RlbSAiVmVoaWNsZXMiIAogICAgICAgICAgICBwYXJraW5nTG90cyA9IHNvZnR3YXJlU3lzdGVtICJQYXJraW5nTG90cyIKCiAgICAgICAgICAgIHZlaGljbGVzIC0+IGlkZW50aXR5ICJVc2VzIgogICAgICAgICAgICBwYXJraW5nTG90cyAtPiBpZGVudGl0eSAiVXNlcyIKICAgICAgICB9CiAgICAgICAgCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICAgICAgc2hhcGUgcGVyc29uCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgfQogICAgICAgIAp9Cg=="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "customer"
+      },
+      "name" : "Customer",
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "2",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "identity"
+      },
+      "name" : "Identity",
+      "group" : "Identity&AccessManagement",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "license"
+      },
+      "name" : "License",
+      "group" : "Identity&AccessManagement",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "accessmanagement"
+      },
+      "name" : "Access Management",
+      "group" : "Identity&AccessManagement",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "5",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "vehicles"
+      },
+      "name" : "Vehicles",
+      "relationships" : [ {
+        "id" : "7",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "321a85d8-4de8-4f3e-b680-62417246f0d0"
+        },
+        "sourceId" : "5",
+        "destinationId" : "2",
+        "description" : "Uses"
+      } ],
+      "group" : "Logistics",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "6",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "parkinglots"
+      },
+      "name" : "ParkingLots",
+      "relationships" : [ {
+        "id" : "8",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "30f96244-dbc9-4db6-a9dc-2f79b84ee547"
+        },
+        "sourceId" : "6",
+        "destinationId" : "2",
+        "description" : "Uses"
+      } ],
+      "group" : "Logistics",
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemLandscapeViews" : [ {
+      "key" : "Platform",
+      "order" : 1,
+      "description" : "An automatically generated system platform view.",
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "7"
+      }, {
+        "id" : "8"
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Person",
+          "shape" : "Person"
+        } ]
+      },
+      "terminology" : { }
+    }
+  }
+}
