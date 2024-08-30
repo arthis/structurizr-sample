@@ -3,7 +3,7 @@
   "name" : "Platform",
   "description" : "Description",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbmFtZSAiIFBsYXRmb3JtIC0gYmlnIGVudGVycHJpc2UiCgogICAgbW9kZWwgewogICAgICAgIGN1c3RvbWVyID0gcGVyc29uICJDdXN0b21lciIKCiAgICAgICAgZ3JvdXAgSWRlbnRpdHkmQWNjZXNzTWFuYWdlbWVudCB7CiAgICAgICAgICAgIGlkZW50aXR5ID0gc29mdHdhcmVTeXN0ZW0gIklkZW50aXR5IgogICAgICAgICAgICBsaWNlbnNlID0gc29mdHdhcmVTeXN0ZW0gIkxpY2Vuc2UiCiAgICAgICAgICAgIGFjY2Vzc01hbmFnZW1lbnQgPSBzb2Z0d2FyZVN5c3RlbSAiQWNjZXNzIE1hbmFnZW1lbnQiCiAgICAgICAgfQoKICAgICAgICBncm91cCAgTG9naXN0aWNzIHsKICAgICAgICAgICAgdmVoaWNsZXMgPSBzb2Z0d2FyZVN5c3RlbSAiVmVoaWNsZXMiIAogICAgICAgICAgICBwYXJraW5nTG90cyA9IHNvZnR3YXJlU3lzdGVtICJQYXJraW5nTG90cyIKCiAgICAgICAgICAgIHZlaGljbGVzIC0+IGlkZW50aXR5ICJVc2VzIgogICAgICAgICAgICBwYXJraW5nTG90cyAtPiBpZGVudGl0eSAiVXNlcyIKICAgICAgICB9CiAgICAgICAgCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICAgICAgc2hhcGUgcGVyc29uCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgfQogICAgICAgIAp9Cg=="
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbmFtZSAiIFBsYXRmb3JtIC0gYmlnIGVudGVycHJpc2UiCgogICAgbW9kZWwgewogICAgICAgIGN1c3RvbWVyID0gcGVyc29uICJDdXN0b21lciIKCiAgICAgICAgZ3JvdXAgU2FsZXMgewogICAgICAgICAgICBTYWxlc1Byb2Nlc3NpbmcgPSBzb2Z0d2FyZVN5c3RlbSAiU2FsZXNQcm9jZXNzaW5nIgogICAgICAgIH0KCiAgICAgICAgZ3JvdXAgIExvZ2lzdGljcyB7CiAgICAgICAgICAgIHZlaGljbGVzID0gc29mdHdhcmVTeXN0ZW0gIlZlaGljbGVzIiAKICAgICAgICAgICAgcGFya2luZ0xvdHMgPSBzb2Z0d2FyZVN5c3RlbSAiUGFya2luZ0xvdHMiCgogICAgICAgICAgICB2ZWhpY2xlcyAtPiBTYWxlc1Byb2Nlc3NpbmcgIlVzZXMiCiAgICAgICAgICAgIHBhcmtpbmdMb3RzIC0+IFNhbGVzUHJvY2Vzc2luZyAiVXNlcyIKICAgICAgICB9CiAgICAgICAgCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICAgICAgc2hhcGUgcGVyc29uCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgfQogICAgICAgIAp9Cg=="
   },
   "configuration" : { },
   "model" : {
@@ -20,46 +20,26 @@
       "id" : "2",
       "tags" : "Element,Software System",
       "properties" : {
-        "structurizr.dsl.identifier" : "identity"
+        "structurizr.dsl.identifier" : "salesprocessing"
       },
-      "name" : "Identity",
-      "group" : "Identity&AccessManagement",
+      "name" : "SalesProcessing",
+      "group" : "Sales",
       "location" : "Unspecified",
       "documentation" : { }
     }, {
       "id" : "3",
       "tags" : "Element,Software System",
       "properties" : {
-        "structurizr.dsl.identifier" : "license"
-      },
-      "name" : "License",
-      "group" : "Identity&AccessManagement",
-      "location" : "Unspecified",
-      "documentation" : { }
-    }, {
-      "id" : "4",
-      "tags" : "Element,Software System",
-      "properties" : {
-        "structurizr.dsl.identifier" : "accessmanagement"
-      },
-      "name" : "Access Management",
-      "group" : "Identity&AccessManagement",
-      "location" : "Unspecified",
-      "documentation" : { }
-    }, {
-      "id" : "5",
-      "tags" : "Element,Software System",
-      "properties" : {
         "structurizr.dsl.identifier" : "vehicles"
       },
       "name" : "Vehicles",
       "relationships" : [ {
-        "id" : "7",
+        "id" : "5",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "321a85d8-4de8-4f3e-b680-62417246f0d0"
+          "structurizr.dsl.identifier" : "10e13acb-0cb7-4c0e-896c-03df359dc209"
         },
-        "sourceId" : "5",
+        "sourceId" : "3",
         "destinationId" : "2",
         "description" : "Uses"
       } ],
@@ -67,19 +47,19 @@
       "location" : "Unspecified",
       "documentation" : { }
     }, {
-      "id" : "6",
+      "id" : "4",
       "tags" : "Element,Software System",
       "properties" : {
         "structurizr.dsl.identifier" : "parkinglots"
       },
       "name" : "ParkingLots",
       "relationships" : [ {
-        "id" : "8",
+        "id" : "6",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "30f96244-dbc9-4db6-a9dc-2f79b84ee547"
+          "structurizr.dsl.identifier" : "fe0154ab-a1ee-4f54-adb6-328d07045791"
         },
-        "sourceId" : "6",
+        "sourceId" : "4",
         "destinationId" : "2",
         "description" : "Uses"
       } ],
@@ -96,9 +76,9 @@
       "description" : "An automatically generated system platform view.",
       "enterpriseBoundaryVisible" : true,
       "relationships" : [ {
-        "id" : "7"
+        "id" : "5"
       }, {
-        "id" : "8"
+        "id" : "6"
       } ],
       "elements" : [ {
         "id" : "1",
@@ -114,14 +94,6 @@
         "y" : 0
       }, {
         "id" : "4",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "5",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "6",
         "x" : 0,
         "y" : 0
       } ]

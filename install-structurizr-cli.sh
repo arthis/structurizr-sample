@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-input_variable="$(pwd)/model"
+input_variable="$(pwd)"
 
 echo "C4 model root path: $input_variable"
 
@@ -27,18 +27,11 @@ echo "docker run --rm -v $input_variable:/workspace structurizr/cli:latest \$@" 
 chmod +x structurizr
 # if symbolic link exists then removes it
 if [ -f /usr/local/bin/structurizr ]; then
+    echo "removing structurizr symbolic link..."
     sudo rm /usr/local/bin/structurizr
 fi
 sudo ln -s $(pwd)/structurizr /usr/local/bin/structurizr
 
-# create a symbolic link to the structurizr-push file
-echo "creating structurizr-push file..."
-chmod +x structurizr-push
-# if symbolic link exists then removes it
-if [ -f /usr/local/bin/structurizr-push ]; then
-    sudo rm /usr/local/bin/structurizr-push
-fi
-sudo ln -s $(pwd)/structurizr-push /usr/local/bin/structurizr-push
 
 sudo apt update
 sudo apt install inotify-tools

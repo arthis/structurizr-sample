@@ -5,27 +5,11 @@ This is a demo sample repository to show how to highlight what , AFAIK, might be
 
 #  context
 
-Two teams are working on differnt part of a very big architecture.  One is a platform team (PT) working on Identity and access management, the other a feature team (FT) working on logistics.
+Two teams are working on different part of a very big architecture.  One is a feature team  working on Sales (FTS), the other a feature team  working on logistics (FTL).
 
-I would like FT to be able to document its interactions with the surroundings in a explicit way, meaning able to reference containers owned by the PT.
+I would like FTS to be able to document its interactions with the surroundings in a explicit way, meaning able to reference containers owned by the FTL for instance.
 
 Thas might go as follows  :
-Identity&AccessManagement/Identity/workspace.dsl
-```dsl
-workspace extends ../../platform/workspace.dsl {
-    name "Identity & Access Management - Identity" 
-    model {
-        !extend identity {
-            api = container "isa-user-svc" {
-                description "api"
-                technology "c#"
-                tags "isa-user-svc"
-                url "https://mygit.com/_git/isa_user"
-            }
-        }
-    }
-}
-```
 
 Logistics/ParkingLots/workspace.dsl
 ```dsl
@@ -40,16 +24,36 @@ workspace extends ../../platform/workspace.dsl   {
                     url "https://mygit.com/_git/gi_parkinglots"
                 }
             }
-            parkingLots -> identity.api "authenticates with"
+            
+```
+
+Sales/SalesProcessing/workspace.dsl
+```dsl
+workspace extends ../../platform/workspace.dsl {
+    name "Sales - SalesProcessing" 
+    model {
+        !extend SalesProcessing {
+            api = container "sales-processing-svc" {
+                description "api"
+                technology "c#"
+                tags "sales-processing-svc"
+                url "https://mygit.com/_git/isa_user"
+            }
+            
+            api -> parkingLots.api "checks"
+        }
+
+    }
+}
 ```
 
 
-This is important , so that the FT can exactly know what are his exact dependencies on the outside. These should then be included in the view.
+This is important , so that the FTS can exactly know what are his exact dependencies on the outside. These should then be included in the view owned by the FTS.
 ```dsl
-    container Parkinglots "Containers" {
+    container SalesProcessing "Containers" {
             include *
         }
 ```dsl        
 
 
-THe only way I see to do it, would be to 
+

@@ -7,18 +7,16 @@ workspace {
     model {
         customer = person "Customer"
 
-        group Identity&AccessManagement {
-            identity = softwareSystem "Identity"
-            license = softwareSystem "License"
-            accessManagement = softwareSystem "Access Management"
+        group Sales {
+            SalesProcessing = softwareSystem "SalesProcessing"
         }
 
         group  Logistics {
             vehicles = softwareSystem "Vehicles" 
             parkingLots = softwareSystem "ParkingLots"
 
-            vehicles -> identity "Uses"
-            parkingLots -> identity "Uses"
+            vehicles -> SalesProcessing "Uses"
+            parkingLots -> SalesProcessing "Uses"
         }
         
     }

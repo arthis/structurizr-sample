@@ -2,13 +2,17 @@
 
 url="http://mygitserver.com/api"
 id="1"
-key="xxxxxxxxx"
-secret="xxxxxxxxx"
+key="xxxx"
+secret="xxxx"
 workspace="/workspace/model/platform/workspace.json"
 
 # structurizr-push $url $id $key $secret $workspace
 
-while inotifywait -r "../Identity&AccessManagement" -r "../Logistics" -e close_write workspace.dsl;  do 
+./mergePlatform.sh
+structurizr push -url $url -id $id -key $key -secret $secret -w $workspace
+rm -f structurizr-*.json
+
+while inotifywait -r "../Sales" -r "../Logistics" -e close_write workspace.dsl;  do 
     ./mergePlatform.sh
     structurizr push -url $url -id $id -key $key -secret $secret -w $workspace
     rm -f structurizr-*.json
